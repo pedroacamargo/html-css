@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+
+        body {
+
+           
+
+            font-family: 'work Sans', Arial, Helvetica, sans-serif; /* Verdana, Helvetica, Arial ///// https://www.w3schools.com/cssref/css_websafe_fonts.asp ///// serif, sans-serif, monospace, cursive, fantasy //// NA LISTA DE FONTES, O SISTEMA BUSCARÁ UTILIZAR A PRIMEIRA DA ESQUERDA PARA DIREITA */
+
+
+
+            font-size: 1em; 
+            /*
+            Medidas absolutas:
+            cm, mm, in(polegada), px, pt(ponto[editor de texto, o mesmo do word]), pc(paica) {pt e pc não são recomendados serem utilizados em digital}
+
+            Medidas relativas:
+            em(medida relativa ao tamanho atual da fonte), ex(altura x), rom, vw(largura da viewport, tela), vh(altura da viewport), % 
+
+            Medidas recomendadas -> px, em
+
+            Tamanho normal de uma fonte -> 16px
+
+            16px geralmente é = 1em
+            */
+
+            font-weight: normal;
+                /* 
+                    100 - 900
+
+                    weight -> lighter, normal, bold, bolder
+
+                    peso, largura, altura -> weight, width, height
+                */
+
+            font-style: normal;
+                /*italic, oblique, normal*/
+
+            text-decoration: underline;
+        }
+
+        h1{
+            font-family: sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+            /*
+            shorthand font
+            
+            font: font-style , font-weight, font-size, font-family
+            */ 
+            font: italic bolder 3em 'sans-serif';
+        }
+
+        h2{
+            font: bold 2em 'sans-serif';
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit at maiores libero expedita sint dolor, architecto excepturi dignissimos suscipit necessitatibus placeat tenetur possimus perspiciatis dicta animi neque nesciunt blanditiis adipisci! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam sit tempora praesentium adipisci, amet illo facere qui laboriosam. Ducimus nisi maxime dicta harum voluptatem. Natus odio repellat earum assumenda nemo. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus dolor quae, molestiae similique facere nesciunt itaque vel. Perferendis dolore soluta itaque mollitia inventore quae debitis esse rerum accusantium, expedita doloribus.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum saepe repellendus ad, eaque ratione natus id dolores tempore vel cum corrupti quas aspernatur. Natus repudiandae reprehenderit soluta obcaecati, blanditiis temporibus?</p>
+    <h2>Subtítulo do exercicio</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel eveniet doloribus perspiciatis facere nam dignissimos ipsum modi consectetur non commodi soluta mollitia inventore nulla cupiditate, tempore, incidunt sit? Hic, quisquam!</p>
+</body>
+</html>

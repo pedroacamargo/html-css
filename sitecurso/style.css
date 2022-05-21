@@ -1,0 +1,151 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;600;700;800&display=swap');
+
+
+:root {
+    --cor01: #caf0f8;
+    --cor02: #ade8f4;
+    --cor03: #90e0ef;
+    --cor04: #48cae4;
+    --cor05: #00b4d8;
+    --cor06: #0096c7;
+    --cor07: #0077b6;
+    --cor08: #023e8a;
+    --cor09: #03045e;
+
+    --fonte01: 'Crete Round';
+    --fonte02: 'Dosis';
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor03);
+}
+
+header {
+    background-color: rgba(17, 17, 17, 0.87);
+    padding: 15px 5% 15px 5%;
+    min-width: 350px;
+}
+
+header h1 {
+    text-align: left;
+    color: white;
+    font-family: var(--fonte01);
+    background-image: linear-gradient(to right, black, transparent);
+    border-radius: 20px 0px 0px 0px;
+    padding: 10px 0px 10px 20px;
+    text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.301);
+}
+
+header p {
+    text-align: left;
+    background-image: linear-gradient(to right, white, transparent);
+    color: black;
+    padding: 2px 0px 2px 20px;
+    border-radius: 0px 0px 0px 20px;
+    font-family: var(--fonte01);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.301);
+}
+
+nav {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 25px;
+    background-color: black;
+}
+
+nav ul {
+    color: black;
+    list-style: none;
+    position: relative;
+}
+
+nav ul li {
+    width: 100px;
+    float: left;
+    border-right: 1px solid gray;
+    border-top: 1px solid gray;
+}
+
+nav a {
+    color: white;
+    padding: 5px 0px 1px 0px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background-color: black;
+}
+
+nav ul ul {
+    position: absolute;
+    visibility: hidden;
+}
+
+nav ul li:hover ul{
+    visibility: visible;
+}
+
+nav ul a:hover {
+    background-color: white;
+    color: black;
+}
+
+nav ul ul li {
+    float: none;
+    border-top: solid 0.2px black;
+}
+
+nav ul ul li a {
+    background-color: gray;
+    color: black;
+    border-top: 1px solid black;
+}
+
+nav ul ul li a:hover {
+    color: white;
+    background-color: rgb(44, 27, 27);
+}
+
+main {
+    background-color: whitesmoke;
+    margin: auto;
+    padding: 20px 10px 10px 15px;
+    line-height: 1.2em;
+    font-family: var(--fonte02);
+    font-weight: 600;
+    text-align: justify;
+    text-indent: 30px;
+}
+main h1 {
+    padding: 0px 0px 20px 0px;
+    text-align: center;
+}
+
+main ul {
+    list-style: none;
+    display: inline;
+}
+
+main ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main li {
+    background-color: var(--cor05);
+    height: 100px;
+    width: 100px;
+}
+
+main ul li:hover {
+    background-color: var(--cor07);
+    padding: 50px 0px 0px 0px;
+}

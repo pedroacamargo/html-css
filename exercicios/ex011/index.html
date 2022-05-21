@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias de HTML5</title>
+</head>
+<body>
+    <p><a href="../resumo.html">Voltar para a página de resumo</a></p>
+    <hr>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente ou diminua de tamanho o seu navegador.</p>
+    <h2>Como fazer uma imagem dinâmica</h2>
+    <p>Para fazermos uma imagem assim, devemos escrever todas imagens dentro da tag <code>&lt;picture&gt;</code>, com a imagem principal na base do código <b>(na parte de baixo)</b> com imagens de diferentes tamanhos acima da imagem principal, utilizando a tag &lt;source:media:type&gt; e assim escrevendo o seu mínimo de pixels ou máximo de pixels de forma a estar presente em uma página. <br> <ins><strong><sup>Exemplo de código:</sup></strong></ins>
+    
+    <pre>
+        <code>
+&lt;picture&gt; 
+    &lt;source media="(max-width: 750)" srcset="foto-p.png" type="image/png"&gt;
+    &lt;source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png"&gt;
+    &lt;img src="imagens/foto-g.png" alt="Imagem flexível"&gt;
+&lt;/picture&gt;
+
+        </code>
+    </pre></p>
+
+    <picture>
+        <source media="(min-width: )" srcset="" type="image/">
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+<!-- picture é a tag para quando a imagen é flexível-->
+<hr>
+    <h2>Mexendo com áudios</h2> <!-- Cuidados a tomar: Direitos autorais, tamanho do arquivo-->
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+        <audio src="midia/musiquinhabraba.mp3" controls autoplay></audio> <!-- MP3, WAV, OGG, escolher alguns desses para ter mais compatibilidade-->
+        <audio preload="metadata" controls autoplay loop>  <!-- AUTO, METADATA, NONE--> <!-- auto = o site so termina de carregar depois de voce ter terminado de carregar o áudio também. metadata = carrega algumas informações do arquivo. none = carrega nada, so quando o usuário apertar no play-->
+            <source src="midia/musiquinhabraba.mp3" type="audio/mpeg"> <!-- source:src -->
+            <source src="midia/musiquinhabraba.ogg" type="audio/ogg">
+            <source src="midia/musiquinhabraba.wav" type="audio/wav"> <!--Caso eu tivesse como converter, colocaria aqui outras sources de audio com outro tipo .arq--> <!--A ORDEM IMPORTA! VAI DE CIMA PARA BAIXO-->
+            <p>Infelizmente, seu navegador não consegue reproduzir áudio. <a href="midia/musiquinhabraba.mp3">CLIQUE AQUI PARA BAIXAR O ARQUIVO MP3</a></p>
+        </audio>
+        <!-- TENTAR EVITAR ARQUIVOS WAV, SÃO MUITO GRANDES E MUITO PESADOS.-->
+</body>
+</html>

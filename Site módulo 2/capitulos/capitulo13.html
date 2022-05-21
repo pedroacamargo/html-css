@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="chaps.css">
+    <title>Capítulo 13</title>
+</head>
+<body>
+    <main>
+        <p style="text-align: center;"><audio preload="none" src="midia/musiquinhabraba.mp3" controls loop></audio> <br><sup><strong>Musiquinha para ouvir enquanto lê</strong></sup> <br> <a href="../index.html">Voltar para capítulos</a></p>
+        
+        
+        <hr>
+        <h1 id="top">Capítulo 13 - Básico de CSS</h1>
+        <h2>Aula 01 - Psicologia das cores</h2>
+        <p>Na criação de sites, os desenvolvedores devem tomar em conta a emoção que cada cor está associada. <br>
+        <strong>Por exemplo</strong> &rarr; Sites de restaurantes combinam com uma tonalidade mais puxada para o marrom, já sites de moda para o roxo/rosa. Abaixo vai um quadro para representar cada cor e a sua associação.</p>
+
+        <div class="img1">
+            <img src="imagenspdf/tabelasentimento.png" alt="Tabela sentimento das cores"> <br>
+            <a href="imagenspdf/tabelasentimento.png" target="_blank" download="tabelasentimento.png" type="image/png">Clique aqui para baixar a imagem</a>
+        </div>
+        <hr>
+        <!-- AULA 02 -->
+        <h2>Aula 02 - Representando cores com CSS</h2>
+        <ul type="square">
+            <li><strong>Como representar cores em CSS</strong></li>
+            <p>Podemos representar as cores pela forma <code>rgb()</code> ou <code>hsl()</code>. <br>
+            <code>rgb()</code> &rarr; rgb(red, green, blue) <br>
+            <code>hsl()</code> &rarr; hsl(hue[matiz], saturation, luminosity)</p>
+            <p>Além dessas funções, podemos escrever um código e indicar a cor pelo nome da cor ou com um código hexadecimal. <br>
+            Algarismos hexadecimais: 1 2 3 4 5 6 7 8 9 A B C D E F  <br>
+            Além disso, caso queira descobrir uma cor que você gostou ou quiser criar alguma, poderá usar o GIMP ou photoshop.</p>
+            <li><strong>Exemplo de um código CSS indicando cores:</strong></li>
+            <pre>
+                <code>
+body{
+    color: &square;blue;
+    color: #FFFFFF;
+    color: rgb(0, 0, 255);
+    color: hsl(240, 100%, 50%);
+}
+                </code>
+            </pre>
+        </ul>
+
+        <hr>
+
+        <!-- Aula 03 -->
+        <h2>Aula 03 - Harmonia de cores</h2>
+        <ul type="square">
+            <li><strong>O círculo cromático</strong>
+            <p>Devemos escolher algumas cores do círculo cromático. (É recomendado que escolha de 3-5 cores para fazer parte da sua paleta de cores.)</p> 
+            <div class="img2"><img src="imagenspdf/circulocromatico2.png" alt="círculo cromático"></div>
+            </li>
+            <li>
+                <strong>Harmonia</strong>
+                <p>As cores possuem várias formas de serem combinadas: <br>
+                <ol>
+                    <li>Temperatura</li>
+                    <li>Cores complementares</li>
+                    <li>Cores análogas</li>
+                    <li>Cores análogas mais uma complementar</li>
+                    <li>Cores análogas relacionadas</li>
+                    <li>Cores intercaladas</li>
+                    <li>Cores triádicas</li>
+                    <li>Cores em quadrado</li>
+                    <li>Cores tetrádicas</li>
+                    <li>Monocromia</li>
+                </ol>
+            </p>
+            </li>
+        </ul>
+        <hr>
+        <h2>Aula 04 - Onde aplico esse conhecimento?</h2>
+        <p>Existem vários sites para fazer paletas de cores (suas, personalizadas) de forma fácil e simples, sem se preocupar em decorar as harmonias de cores indicadas anteriormente.</p>
+        <ul>
+            <li><a href="https://color.adobe.com/pt/create/color-wheel" rel="external" target="_blank">Color Adobe</a> &rarr; Crie sua propria paleta de cores, de forma simples. Também é possível colocar uma foto para retirar dela suas cores.</li>
+            <li><a href="https://paletton.com/#uid=1000u0kllllaFw0g0qFqFg0w0aF" rel="external" target="_blank">Paletton</a> &rarr; Criar paleta de cores e testar de forma prática a beleza da paleta criada.</li>
+            <li><a href="https://coolors.co/3891a6-0cf574-b80c09-000000-d5c5c8" rel="external" target="_blank">Coolors</a> &rarr; Criar paletas de forma simples, somente apertando o espaço.</li>
+        </ul>
+        <hr>
+        <h2>Aula 05 - Como criar degradê com CSS</h2>
+        <p>Poderemos fazer um gradiente(degradê) de forma simples que nem o exemplificado:</p>
+        <p style="background-image: linear-gradient(to right, crimson, gold,blue);">&ThinSpace;</p>
+        <p>Para isso, iremos ter que utilizar um código CSS dentro de um style. <br> <sup><strong>Exemplo:</strong></sup></p>
+        <pre>
+            <code>
+body{
+    background-image: linear-gradient(to right, crimson, gold,blue);
+    background-attachment: fixed
+}
+
+<strong>OU</strong>
+
+body{
+    background-image: radial-gradient(circle, crimson, gold, blue);
+}
+            </code>
+        </pre>
+        <strong>Tags utilizadas:</strong>
+        <ol>
+            <li><code>background-image: linear-gradient(direção, cor, cor, cor...);</code> &rarr; Essa tag faz o fundo de qualquer tag ficar em degradê, podemos colocar quantas cores quisermos após escolhermos a direção. A direção poderá ser <ins>to right, to top, to bottom, to left, 45deg, -45deg, etc.</ins></li>
+            <li><code>background-attachment: fixed;</code> &rarr; Essa tag faz o fundo preencher a página toda e junto com o scroll o degradê acompanhar e não parar subitamente.</li>
+            <li><code>background-image: radial-gradient(circle, cor, cor, cor...);</code> &rarr; Mesma coisa que a tag n°1, só muda que o gradiente é em formato radial, podendo escolher a forma</li>
+        </ol>
+        <hr>
+        <h2>Aula 06 - Tags CSS</h2>
+        <ol>
+            <li><code>background-image: linear-gradient(to right, blue, red, yellow);</code> &rarr; Cria gradientes(degradê).</li>
+            <li><code>font-family: ;</code> &rarr; Muda a fonte de algo escrito.</li>
+            <li><code>padding: 10px;</code> &rarr; Espaçamento da página sem nada escrito.</li>
+            <li><code>border-radius: 10px;</code> &rarr; Mudar a borda da caixa de forma que fique circular.</li>
+            <li><code>margin: auto;</code> &rarr; Posição da tag (posição do main). Neste caso, auto deixará o main no meio.</li>
+            <li><code>width: 900px;</code> &rarr; A largura, neste caso, 900 pixels.</li>
+            <li><code>box-shadow: 2px 2px 10px black;</code> &rarr; Sombra da caixa, neste caso, do main. A cor no fim será a sombra e as medidas o tamanho da sombra, a posição, etc.</li>
+            <li><code>color: gold;</code> &rarr; Mudar a cor da fonte.</li>
+            <li><code>text-shadow: 1px 1px 2px black;</code> &rarr; Sombra do texto.</li>
+            <li><code>text-align: justify;</code> &rarr; O alinhamento do texto na página, neste caso o <code>justify</code> será um alinhamento igualado.</li>
+            <li><code>text-decoration: underline;</code> &rarr; Colocar alguma decoração no texto, neste caso, sublinhar.</li>
+            <li><code>background-attachment: fixed;</code> &rarr; O fundo ficará fixo na página inteira, até quando dermos scroll para baixo.</li>
+        </ol>
+        <hr>
+        <p style="text-align: center;"><a href="#top">Voltar para cima</a></p>
+    </main>
+</body>
+</html>

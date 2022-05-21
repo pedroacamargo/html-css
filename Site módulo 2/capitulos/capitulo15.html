@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 15</title>
+    <link rel="stylesheet" href="chaps.css">
+    <style>
+        p {
+            text-indent: 10px;
+        }
+
+        /* CÓDIGO DA AULA 04 ABAIXO */
+
+        a {
+            color: red;
+            background-color: black;
+            font-weight: 700;
+        }
+
+        a:hover {
+            color: yellow;
+            text-decoration: underline;
+        }
+
+        a:visited {
+            color: green;
+            background-color: white;
+        }
+
+        a:active {
+            color: black;
+            background-color: white;
+        }
+
+        a::before {
+            content: "> ";
+        }
+
+        a::after {
+            content: " <";
+        }
+    </style>
+</head>
+<body>
+    <main>
+        
+            <p><div class="voltar"><a href="../index.html" style="color: aqua;">Voltar ao index</a></div></p>
+            
+            <hr>
+            
+            <h1 style="color: aqua;">Capítulo 15 - id e class</h1>
+            
+        <div class="aulas">
+            <h2>Aula 01 - id e class</h2>
+        </div>
+        <p>
+            <ol>
+                <li>
+                    <ins><strong>ID</strong></ins> <br>
+                    <p style="text-indent: 20px;">Deveremos colocar o id em alguma tag, por exemplo <code>&lt;h1 id="principal"&gt;</code>, e assim, poderemos no arquivo.css colocar <code>h1#principal {}</code> e iremos alterar somente as tags com o id.</p>
+                </li>
+                <li>
+                    <ins><strong>CLASS</strong></ins> <br>
+                    <p style="text-indent: 20px">Deveremos colocar o class em alguma tag, por exemplo <code>&lt;h1 class="ola"</code>, e assim, poderemos no arquivo.css colocar <code>h1.ola {}</code> e iremos alterar somente as tags com o id. 
+                    </p>
+                </li>
+            </ol>
+        </p>
+
+        <hr>
+        <h2 class="aulas">Aula 02 - Pseudo-classes</h2>
+        <p>Ao utilizarmos uma tag &lt;div&gt;, no arquivo .css podemos dar uma pseudo-classe para esta div. <br> 
+        <ins><strong><sup>Exemplo:</sup></strong></ins></p>
+        <p>
+            <pre>
+                <code>
+    &lt;style&gt;
+        .voltar {
+            display: inline-block;
+            background-color: lightgray;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+            border; 1px solid black;
+        }
+
+        .voltar:hover {
+            background-color: yellow;
+        }
+    &lt;/style&gt;
+
+    &lt;div class="voltar"&gt;
+        &lt;p&gt;Teste&lt;/p&gt;
+    &lt;/div&gt;
+        </code>
+    </pre>
+    <strong>:hover</strong> &rarr; Passar o mouse (hover your mouse) <br>
+    Ficará assim: <br> <div class="exemplo" style="text-align: center;"></div> <div class="exemplo"></div>
+    </p>
+
+    <hr>
+
+    <h2 class="aulas">Aula 03 - Hover em texto</h2>
+    <p>
+    O hover pode ser utilizado de diversas formas, como por exemplo mostrar objetos ocultos.
+    </p>
+    <div class="mouse" style="text-indent: 10px;">
+    Passe o mouse aqui
+    <p> Objeto oculto </p>
+    </div>
+    <p>
+        Isso pode ser utilizado na criação de menus de opções, por exemplo, ou listas. <br>
+        <strong><ins>Código utilizado:</ins></strong>
+    </p>
+    <pre>
+        <code>
+&lt;style&gt;
+    div > p {
+        display: none;
+    }
+    
+    div:hover > p {
+        display: block;
+        color: white;
+        background-color: red;
+        width: 300px
+    }
+    
+    div:hover {
+        color: red;
+    }
+&lt;/style&gt;
+    
+&lt;div&gt;
+    Passe o mouse aqui
+    &lt;p&gt;TEXTO ESCONDIDO...&lt;/p&gt;
+&lt;div&gt;
+    
+        </code>
+    </pre>
+    
+    <hr>
+
+    <h2 class="aulas">Aula 04 - links</h2>
+    <ol>
+        <li><strong><ins>Símbolos de cada classe</ins></strong></li>
+        <p style="text-indent: 0px;">
+        ID &rarr; <code>#</code> <br>
+        class &rarr; <code>.</code>   <br>
+        pseudo-class &rarr; <code>:</code>   <br>
+        pseudo-element &rarr; <code>::</code>   <br>
+        children &rarr; <code>></code>  </p>
+        
+        <li><strong><ins>Exemplos de pseudo-classes e pseudo-elements</ins></strong></li>
+        <p style="text-indent: 0px;">
+            :hover = Passar o mouse em cima <br>
+            :visited = Visitado (link) <br>
+            :active = Enquanto estiver sendo selecionado (click) <br>
+            ::before = antes (Utilizar a tag "content: '(escrever)'", por exemplo)
+            ::after = depois
+        </p>
+
+        <li><strong><ins>Personalizando links</ins></strong></li> <br>
+        <a href="../index.html">voltar</a>
+        <p>
+            Para ver o código, vá ao código fonte 
+        </p>
+    </ol>
+
+</main>
+</body>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="chaps.css">
+    <title>Capítulo 14</title>
+</head>
+<body>
+    <main>
+        <p style="text-align: center;"><a href="../index.html" rel="prev" target="_self">Voltar para índex</a></p>
+        <hr>
+        <h1 id="top">Capítulo 14 - Tipografia</h1>
+        <h2>Parte 01 - Primeiros passos em Tipografia</h2>
+        <ul type="disc">
+            <li><strong>Forma de um tipo</strong> <br> <p class="img3"><img src="imagenspdf/corpodotipo2.png" alt="imagem tipo" style="border-radius: 20px;"> <br>Quando mudarmos o tamanho da fonte no CSS (font-size), iremos mexer no tamanho do corpo da tipografia.</p></li>
+            <li>
+                <strong>Categorias de Fontes</strong><br><p class="img3"> <img src="imagenspdf/categoriafonte.png" alt="Imagem fonte por categoria" style="border-radius: 20px;"> <br>
+                
+                <strong>A recomendação é:</strong> Textos muito longos em site, preferência de fontes não serifadas. Já em papel, fontes serifadas.</p></li>
+        </ul>
+        <hr>
+
+        <h2>Parte 02 - Fontes em CSS</h2>
+        <p>Existem vários tipos de fontes em CSS e para mudarmos a fonte devemos efetuar um código CSS com a tag <code>font-family: <strong>fonte</strong>;</code></p>
+        <p><a href="https://www.w3schools.com/cssref/css_websafe_fonts.asp" target="_blank" rel="external">Caso queira ver as fontes seguras (Existem em todos dispositivos)</a></p>
+        <p><strong>Exemplo de Fontes</strong> <br>
+        <ol>
+            <li>serif</li>
+            <li>sans-serif</li>
+            <li>monospace</li>
+            <li>cursive</li>
+            <li>fantasy</li>
+        </ol> <br>
+        Exemplo de código com uma fonte:
+        </p>
+        <pre>
+            <code>
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+            </code>
+        </pre>
+        <p>Neste caso, a primeira fonte da esquerda para a direita será a predominante. Se o dispositivo não for compatível com a fonte, a próxima passará a ser a predominante.</p>
+        <hr>
+
+        <h2>Parte 03 - Tamanho e medida de uma fonte</h2>
+        <ul>
+            <li><strong>Tipos de tamanho</strong>
+                <ul>
+                <li>
+                    <strong>Medidas Relativas:</strong> <br>
+                    <ol>
+                        <li><strong>em</strong> &rarr; medida relativa ao tamanho atual da fonte (1em = 16px = fonte normal)</li>
+                        <li><strong>ex</strong> &rarr; altura em x</li>
+                        <li><strong>rom</strong></li>
+                        <li><strong>vw</strong> &rarr; viewport width (tela)</li>
+                        <li><strong>vh</strong> &rarr; viewport height (tela)</li>
+                        <li><strong>%</strong></li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Medidas Absolutas:</strong>
+                    <ol>
+                        <li><strong>cm</strong> &rarr; centímetro</li>
+                        <li><strong>mm</strong> &rarr; milímetros</li>
+                        <li><strong>in</strong> &rarr; polegada</li>
+                        <li><strong>px</strong> &rarr; pixel</li>
+                        <li><strong>pt</strong> &rarr; ponto (O mesmo que o word)</li>
+                        <li><strong>pc</strong> &rarr; paica</li>
+                    </ol>
+                </li>
+            </ul>
+            </li>
+            <li><strong>Medidas recomendadas &rarr; px e em</strong></li>
+            <li><strong>Tamanho padrão de uma fonte &rarr; 16px ou 1em</strong></li>
+        </ul>
+        <hr>
+
+        <h2>Parte 04 - Peso, estilo e shorthand font</h2>
+        <ul>
+            <li><strong>Códigos para mexer nas fontes:</strong> <br>
+                <code>font-weight: normal;</code> &rarr; lighter, normal, bold, bolder /// 100 - 900 <br>
+                <code>font-style: normal;</code> &rarr; italic, oblique, normal <br>
+                <code>font-size: 3em;</code> &rarr; tamanhos absolutos /// tamanhos relativos <br>
+                <code>font-family: 'Arial';</code> &rarr; qualquer fonte <br>
+                <code>text-decoration: underline;</code> &rarr; sublinhar a fonte
+            </li>
+            <br>
+            <li>
+                <strong>Shorthand</strong>
+                <br>
+                font: <strong>font-style font-weight font-size font-family</strong>
+                <br>
+                <code>font: italic bolder 1em 'sans-serif';</code>
+
+            </li>
+        </ul>
+        <hr>
+
+        <h2>Parte 05 - Novas fontes</h2>
+        <ul>
+            <li>
+                <strong>Fontes com Google Fonts</strong> <br> 
+                <p>Site com fontes &rarr; <a href="https://fonts.google.com/?preview.text_type=custom">Google Fonts</a></p>
+                <p>Site para baixar fontes &rarr; <a href="https://www.dafont.com/pt/">DaFont</a></p>
+                <p>Para importar uma fonte do google fonts teremos somente que importar a url da fonte, presente no site. <br>
+                <code>@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap')</code> <br>
+                Depois é só selecionar a fonte no <code>font-family: Indie Flower;</code></p>
+            </li>
+            <li>
+                <strong>Fontes baixadas</strong> <br>
+                <p>Tipos de fontes: <br>
+                    &rarr; OpenType (otf) <br>
+                    &rarr; truetype (ttf) <br>
+                    &rarr; embedded-opentype () <br>
+                    &rarr; truetype-aat (Apple Advanced Typography) <br>
+                    &rarr; svg <br>
+                </p>
+                <p>
+                    Ao baixarmos a fonte e colocarmos numa pasta junto com o seu index.html e style.css, devemos utilizar um código para importar a fonte dentro do seu PC: <br>
+                    <pre>
+                        <code>
+@font-face {
+    font-family: <strong>'ESCOLHER UM NOME'</strong>
+    src: url('fonts/love story.ttf') format('truetype');
+}
+                        </code>
+                    </pre>
+                    Depois é só selecionarmos a fonte que importamos em algum <code>font-family: 'nome da fonte';</code> com o nome que escolhemos.
+                </p>
+            </li>
+        </ul>
+        <hr>
+
+        <h2>Parte 06 - Alinhamentos</h2>
+        <ul>
+            <li>
+                <strong>Tags:</strong> <br> &rarr; text-align: "<ins>center || justify || right || left</ins>" <br>
+                &rarr; text-indent: 20px; 
+            </li>
+            <br>
+            <li><strong>Argumentos da tag:</strong> <br>
+            <ul type="disc">
+                <li>center &rarr; Alinha no centro</li>
+                <li>left &rarr; Alinha na esquerda</li>
+                <li>right &rarr; Alinha na direita</li>
+                <li>justify &rarr; Alinha o parágrafo em toda linha, sem espaços no fim e no início.</li>
+            </ul></li>
+        </ul>
+
+        <hr>
+        <p class="top"><a href="#top">Voltar ao topo</a></p>
+    </main>
+</body>
+</html>

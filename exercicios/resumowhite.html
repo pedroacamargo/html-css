@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="ex004/favicon.ico" type="image/x-icon">
+    <title>Resumão</title>
+    <style>
+        body{
+            background-color: white;
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: darkred;
+        }
+        code{
+            color: green;
+            font-family: sans-serif;
+        }
+    </style> <!--Escrever cor acima!!!-->
+</head>
+<body>
+    <a href="resumo.html" target="_self" style="float: right;"><img src="imagensresumo/solpreto20.png" alt="Trocar para modo claro"></a>
+    <h1 id="top">Resumo do curso de HTML5 &rarr; <ins>curso em vídeo</ins></h1>
+    <hr>
+    <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Aula01-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
+    <h2>Aula 01</h2>
+    <p>&rarr;  Digitar <ins>!</ins> para criar o código básico do HTML5</p>
+    <p>&rarr; <strong>&lt;title&gt;</strong> Título da Página <strong>&lt;/title&gt;</strong></p>
+    <p>&rarr; <strong>&lt;hr&gt;</strong> Faz uma linha horizontal na página</p>
+    <p>&rarr; <strong>&lt;p&gt;</strong> Escreva algo (é um parágrafo) <strong>&lt;/p&gt;</strong></p>
+    <hr>
+    <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Aula02-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
+    <h2>Aula 02</h2>
+    <p>&rarr; Para fazer anotações basta adicionar &lt;!-- ao lado do código e escrever algo dentro dele. <br> <mark>Exemplo:</mark> <br> &lt;!-- LESS THAN / GREATER THAN--&gt; </p>
+    <p>&rarr; Para adicionar símbolos especiais basta adicionar um & na frente, escrever o código e fechar com ; <br> <mark>Exemplos: </mark> <br> &copy; &reg; &uparrow; &updownarrow; &Delta;</p>
+    <p>&rarr; <strong>&lt;br&gt;</strong> para passar para a linha de baixo, mas sem parágrafo</p>
+    <p>&rarr; Para fazer emojis basta colocar <strong>&#x'Código do emoji';</strong> <br> <mark>Exemplo:</mark> &#x2764; <br><sub>Obs: O código dos emojis pode ser acessado em <ins>emojipedia.org</ins></sub></p>
+    <hr>
+    <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Aula03-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
+    <h2>Aula 03 - mexer com imagens</h2>
+    <p>&rarr; Para colocar uma imagem num site, basta digitar a tag IMG <br> <mark>Exemplo:</mark> <br> &lt;img src="Imagem na pasta do pc" alt="Escrever o que a imagem representa (deficientes visuais)"&gt; <br> <sub>Exemplo: (Ver no código)</sub> <br><img src="ex004/favicon.ico" alt="Ícone de alienígena"></p>
+    <hr>
+    <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Aula04-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
+    <h2>Aula 04 - ícone dos favoritos (aba la em cima)</h2>
+    <p>&rarr; Para mudarmos o ícone da nossa página basta escrever "link:favicon" no Visual Studio Code que ele irá completar para você o código inteiro. <br> Ficará com uma aparência assim: <br> <strong>link rel="shortcut icon" href="favicon.ico" type="image/x-icon" </strong> &rarr; em <ins>href</ins> você irá digitar o arquivo do seu arquivo.ico (Tem que ser ico, é o melhor para os ícones)</p>
+    <p><strong>O CÓDIGO TEM QUE SER DIGITADO EM &lt;head&gt;</strong></p>
+    <hr>
+    <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Aula05-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
+    <h2>Aula 05 - hierarquia de Títulos</h2>
+    <p>&rarr; Devemos tem em mente que existem várias tags para títulos e subtítulos:<strong>
+        <br>
+            &lt;h1&gt; <br> &lt;h2&gt; <br> &lt;h3&gt; <br> &lt;h4&gt; <br> &lt;h5&gt; <br> &lt;h6&gt;
+        </strong> <br>
+        Cada um deles é um título, um menor do que o outro, sendo o &lt;h1&gt; o título principal. <br>
+        Para exemplificar, poderá ver o código deste site.
+        Além disso, caso você queira exemplificar um parágrafo, basta digitar "Lorem" <br>
+        <sub>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, placeat consequuntur nisi qui nam reprehenderit est animi doloremque nesciunt, id eius explicabo voluptatibus sit! Officiis atque omnis commodi ullam magni?</sub>
+    </p>
+    <hr>
+    <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Aula06-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
+    <h2>Aula 06 - HTML4/HTML5</h2>
+    <p>
+        &rarr; O HTML4, por ser antigo, possui muitas tags obsoletas (que não funcionam mais) e até hoje elas funcionam mas não são recomendadas serem utilizadas pelo próprio desenvolvedor do HTML. <br>
+        &rarr; Exemplo de tags obsoletas:
+    </p>
+    <p>
+        &rarrb; &lt;u&gt;  Sublinha a palavra em baixo <br>
+        &rarrb; &lt;marquee behavior="" direction="right"&gt; <strong>Exemplo de texto</strong>  &lt;/marquee&gt; Faz uma mensagem que se mexe ao longo da página, mudando somente a sua direção em "direction" <br>
+        <sub>Exemplo: <marquee behaviou="" direction="right">exemploo</marquee></sub> <br>
+        <sup><strong><ins>EXISTEM MUITAS OUTRAS TAGS OBSOLETAS!</ins></strong></sup>
+    </p>
+    <p>
+        &rarr; Para indicarmos um endereço de uma moradia, existe a tag &lt;address&gt; <br>
+        <address>Rua de Moçambique, R/C, 1107, 1° Bloco</address>
+    </p>
+    <p>
+        &rarr; Caso seja necessário mudar a cor da página (background), terá que usar CSS. 
+        Basta ir dentro da tag &lt;head&gt; e escrever &lt;style&gt;, dentro da tag style fazer um <br>
+        body{ <br>
+          background-color: <strong>COR</strong>; <br>
+        } 
+    </p>
+    <hr>
+    <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Aula07-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
+    <h2>Aula 07 - Principais formatações</h2>
+    <p>
+        &rarr; Exemplos de tags semânticas: (não obsoletas) <br>
+        &lt;strong&gt; &rarrb; <strong>Termo em destaque</strong> <br>
+        &lt;em&gt; &rarrb; <em>Termo em ênfase</em> <br>
+        &lt;small&gt; &rarrb; <small>Texto pequeno</small> <br>
+        &lt;del&gt; &rarrb; <del>Texto deletado</del> <br>
+        &lt;ins&gt; &rarrb; <ins>Texto inserido</ins> <br>
+        &lt;sup&gt; &rarrb; x<sup><strong>20</strong></sup>+3 <br>
+        &lt;sub&gt; &rarrb; H<sub><strong>2</strong></sub>O 
+    </p>
+    <p>
+        &rarr; Exemplos de tags não semânticas: (obsoletas) <br>
+        &lt;b&gt; &rarrb; <b>Negrito</b><br>
+        &lt;i&gt; &rarrb; <i>Itálico</i><br>
+        &lt;mark&gt; &rarrb; <mark>Texto marcado</mark><br>
+        &lt;big&gt; &rarrb; <big>Texto grande</big><br>
+        &lt;u&gt; &rarrb; <u>Texto sublinhado</u>
+    </p>
+    <hr>
+    <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Aula08-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
+    <h2>Aula 08 - Outras formatações</h2>
+    <p>
+        &rarr; <ins><strong>Comandos:</strong></ins> <br>
+        <strong>&lt;code&gt; &lt;/code&gt;</strong> &rarrb; Fonte mono espaçada. <br>
+        <sub><ins>Exemplo:</ins></sub> <code>document.getElementById('Teste')</code> <br>
+        <code><strong>&lt;pre&gt; &lt;/pre&gt;</strong></code> &rarrb; Resolver a indexação de um &lt;code&gt;. <br>
+        <sub><ins><strong>Exemplo:</strong></ins></sub>
+        <pre>
+            <code>
+num = int(input('Digite um número'))
+if num % 2 == 0:
+    print(f'O número {num} é par')
+else:
+    print(f'O número {num} é ímpar')
+print('Fim do programa')
+            </code>
+        </pre> 
+        &rarr; <strong><ins>Citações:</ins></strong>
+        <strong><code>&lt;q&gt; &lt;/q&gt;</code></strong> &rarrb; É uma <strong>QUOTE</strong> (citação) ----
+        O padre escreveu: <q>Dorimé</q> <br>
+        &rarr; <strong><ins>Citação completa:</ins></strong>
+        <code>&lt;<strong>blockquote cite</strong>="<ins>link</ins>"&gt; <strong>&lt;/blockquote&gt;</strong></code> <br>
+        <sup><ins><strong>Exemplo:</strong></ins></sup> <br>
+        Segundo Siamak Sarmandy, no seu livro HTML Web Design in 7 days!:
+        <blockquote cite="https://books.google.pt/books?id=YwEQoMAJjj8C&pg=PT3&dq=html&hl=pt-PT&sa=X&ved=2ahUKEwjP5e6S8vL1AhUxy4UKHSqKAJwQ6AF6BAgEEAI#v=onepage&q=html&f=false">
+            We can change face and size of fonts using tags.
+        </blockquote>
+
+        &rarr; <ins><strong>Abreviações:</strong></ins>
+        <code><strong>&lt;abbr title="Título da abreviação"&gt; &lt;/abbr&gt;</strong></code> &rarrb; Faz uma anotação em alguma abreviação ou qualquer coisa que você queira. (Passar o mouse em cima) <br>
+        <strong><sup><ins>Exemplo:</ins></sup></strong> <br>
+        Eu estou estudando <abbr title="Hyper Text Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>.
+        <br>
+        &rarr; <ins><strong>Texto invertido</strong></ins>
+        <code><strong>&lt;bdo dir="rtl" ou "ltr"&gt; &lt;/bdo&gt;</strong></code> <br>
+        <strong><sup><ins>Exemplo:</ins></sup></strong> <br>
+        <bdo dir="rtl">Olá, tudo bem?</bdo>
+    </p>
+    <hr>
+    <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Aula09-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
+    <h2>Aula 09 - Listas ordenadas e não ordenadas</h2>
+    <ol>
+        <li><strong><ins>Listas Ordenadas</ins></strong></li>
+        <p>
+            <code><strong>&lt;ol&gt; &lt;/ol&gt;</strong></code> &rarr; Tag principal para a criação de listas ordenadas, ol = <em>ordereded list</em> <br>
+            <code><strong>&lt;li&gt; &lt;/li&gt;</strong></code> &rarr; Tag para adicionar itens na lista, li = <em>list item</em> <br>
+            A tag <code>&lt;ol&gt;</code> pode possuir um tipo e um começo: <code>&lt;ol type="I, i, A, a, 1" start="1, 2, 3, 4..."&gt;</code> <br>
+
+            <strong><ins><sup>Exemplo:</sup></ins></strong>
+            <pre>
+                <code>
+&lt;ol type="1" start="1"&gt;
+    &lt;li&gt; Fazer cafuné no gato &lt;/li&gt;
+    &lt;li&gt; Comer o pequeno almoço &lt;/li&gt;
+    &lt;li&gt; Ir para a escola &lt;/li&gt;
+    &lt;li&gt; Voltar da escola e almoçar &lt;/li&gt;
+    &lt;li&gt; Estudar HTML5 &lt;/li&gt;
+&lt;/ol&gt;
+                </code>
+            </pre>
+
+            <em><ins>Representação do código: </ins></em>
+            <ol type="1" start="1">
+                <li>Fazer cafuné no gato</li>
+                <li>Comer o pequeno almoço</li>
+                <li>Ir para a escola</li>
+                <li>Voltar da escola e almoçar</li>
+                <li>Estudar HTML5</li>
+            </ol>
+        </p>
+        <p>
+            <li><strong><ins>Listas não ordenadas</ins></strong></li>
+            <code><strong>&lt;ul&gt; &lt;/ul&gt;</strong></code> &rarr; Tag principal para a ordenação de listas não ordenadas, <code>&lt;ul&gt;</code> = Unordered list <br>
+            A tag <code><strong>&lt;ul&gt;</strong></code> pode ter alguns types: <code>&lt;ul type= square, circle, disc&gt; &lt;/ul&gt;</code> <br>
+            <strong><ins><sup>Exemplo:</sup></ins></strong>
+            <pre>
+                <code>
+&lt;ul type="disc"&gt;
+    &lt;li&gt; Fazer cafuné no gato &lt;/li&gt;
+    &lt;li&gt; Comer o pequeno almoço &lt;/li&gt;
+    &lt;li&gt; Ir para a escola &lt;/li&gt;
+    &lt;li&gt; Voltar da escola e almoçar &lt;/li&gt;
+    &lt;li&gt; Estudar HTML5 &lt;/li&gt;
+&lt;/ul&gt;
+                </code>
+            </pre>
+            <em><ins>Representação do código:</ins></em>
+            <ul type="disc">
+                <li>Fazer cafuné no gato</li>
+                <li>Comer o pequeno almoço</li>
+                <li>Ir para a escola</li>
+                <li>Voltar da escola e almoçar</li>
+                <li>Estudar HTML5</li>
+            </ul>
+        </p>
+    </ol>
+    <hr>
+    <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Aula10-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
+
+    <h2 id="aula10">Aula 10 - Lista de definições</h2>
+    <ul>
+        <li><strong><ins>Definição:</ins></strong> Para explicitar o significado de uma palavra, utilizamos os comandos <code><strong>&lt;dd&gt; e &lt;dt&gt; </strong></code></li>
+        <li><strong><ins>Comandos:</ins></strong></li>
+        <ol>
+            <li><code><strong>&lt;d1&gt;</strong></code> &rarr; <em>Lista de definições número 1.</em></li>
+            <li><code><strong>&lt;dt&gt;</strong></code> &rarr; <em>É o termo, a palavra que irá ser definida/descrita/explicada.</em></li>
+            <li><code><strong>&lt;dd&gt;</strong></code> &rarr; <em>É a definição do termo.</em></li>
+        </ol>
+        <li><strong><ins>Exemplo:</ins></strong></li>
+        <p>
+            <d1>
+                <dt>HTML</dt>
+                <dd>Linguagem de marcação para a criação de um site.</dd>
+                <dt>CSS</dt>
+                <dd>Linguagem de marcação para a criação do design de um site.</dd>
+                <dt>JavaScript</dt>
+                <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
+            </d1>
+            <strong><ins><sup>Representação do código:</sup></ins></strong> <br> 
+            <pre>
+<code>
+&lt;d1&gt;
+    &lt;dt&gt;HTML&lt;/dt&gt;
+    &lt;dd&gt;Linguagem de marcação para a criação de um site.&lt;/dd&gt;
+    &lt;dt&gt;CSS&lt;/dt&gt;
+    &lt;dd&gt;Linguagem de marcação para a criação de um site.&lt;/dd&gt;
+    &lt;dt&gt;JavaScript&lt;/dt&gt;
+    &lt;dd&gt;Linguagem de programação para a criação de interatividade de um site.&lt;/dd&gt;
+&lt;/d1&gt;
+</code>
+            </pre>
+            <strong><ins>OBSERVAÇÃO: O ESTILO DAS DEFINIÇÕES PODERÁ SER ALTERADO NO FUTURO, QUANDO APRENDERMOS CSS.</ins></strong>
+        </p>
+    </ul>
+    <hr>
+    <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Aula11-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
+    <h2>Aula 11 - Trabalhando com links</h2>
+    <ol>
+        <li><ins><strong>Básico dos links</strong></ins></li>
+
+        <ul type="square">
+
+            <li><strong><code>&lt;a&gt; &lt;/a&gt;</code></strong> &rarr; Deverá escrever uma frase dentro dessas tags, de forma a criar uma âncora (hiperligação).</li>
+            <li><strong><code>&lt;a href="<ins><abbr title="URL">LINK</abbr></ins>" target="<abbr title="_blank = Abrir o link em outra página ||| _self = padrão, abrir na mesma página"><ins>_blank</ins></abbr>" rel="<ins>external</ins>"&gt;</code></strong></li>
+            <li><em>Target</em> &rarr; <strong><code>_self _blank</code></strong></li>
+            <li><em>rel</em> &rarr; <strong><code> "external" "next" "prev" "nofollow" </code></strong></li>
+            <li>A tag <ins>rel</ins> serve para facilitar a busca no <a href="https://www.google.com/" target="_blank">google</a></li>
+            
+        </ul>
+
+        <li><ins><strong>Usando links externos</strong></ins></li>
+        <p>
+            Visite o meu <a href="https://www.instagram.com/pedroa_camargo/" target="_blank" rel="external">Instagram</a> <br>
+            <sub><strong>APARÊNCIA DO CÓDIGO:</strong></sub> <br>
+            <code>Visite o meu &lt;a&gt;href="<ins>https://www.instagram.com/pedroa_camargo/</ins>" target="_blank" rel="external">Instagram&lt;/a&gt;</code>
+        </p>
+        <li><strong><ins>Usando links internos</ins></strong></li>
+        <p>
+            Acesse a <a href="pagaula11.html">página 02</a> do nosso site. <br>
+            <strong><sub>APARÊNCIA DO CÓDIGO:</sub></strong> <br>
+            <code>Acesse a &lt;a href="<ins>pagaula11.html</ins>">página 02&lt;/a&gt; do nosso site.</code> <br>
+            <strong>OBS:</strong> é preciso ter um folder ou file no arquivo para que o arquivo na href funcione. <br>
+            &rarr; Além disso, caso o arquivo esteja dentro de uma pasta, deverá escrever antes ../ de forma a indicar que está contida na pasta anterior. (Função Linux). &rarr; <code>../resumo.html</code>
+        </p>
+        <li><strong><ins>Tipos de rel:</ins></strong></li>
+        <p>
+            &rarr; <em><strong>external</strong></em> - Te leva para um site exterior ao teu.
+            <br>
+            &rarr; <em><strong>next</strong></em> - Leva para um site próprio, para a próxima página do site.
+            <br>
+            &rarr; <em><strong>prev</strong></em> - Leva para a página anterior, do seu site.
+            <br>
+            &rarr; <em><strong>nofollow</strong></em> - Leva para um site especial, patrocinado, onde o público é limitado.
+        </p>
+        <li><strong><ins>Links para download</ins></strong></li>
+        <p><sup><ins><strong>Exemplo:</strong></ins></sup> <br>
+        <a href="ex010/livro/meulivro.zip" download="meulivro.zip" type="application/zip">Clique aqui para baixar o ZIP de um exemplo de um livro.</a></p>
+        <p><a href="ex010/livro/meulivro.pdf" download="meulivro.zip" type="application/pdf" target="_blank">Clique aqui para baixar o PDF de um exemplo de um livro.</a> <br>
+        <sup><strong><ins>Representação do código feito acima:</ins></strong></sup>
+        <pre>
+            <code>
+    &lt; href="<ins>ex010/livro/meulivro.zip</ins>" download="<ins>meulivro.zip</ins>" type="<ins>application/zip</ins>"&gt;Clique aqui para baixar o ZIP de um exemplo de um livro.&lt;/a&gt;
+    &lt;a href="<ins>ex010/livro/meulivro.pdf</ins>" download="<ins>meulivro.zip</ins>" type="<ins>application/pdf</ins>" target="blank"&gt;Clique aqui para baixar o PDF de um exemplo de um livro.&lt;/a&gt;
+            </code>
+        </pre>
+        </p>
+
+        <p><em>Media type de cada arquivo &rarr; </em><a href="https://www.iana.org/assignments/media-types/media-types.xhtml" rel="external" target="_blank"> CLIQUE AQUI </a> <br> 
+        <ins>Alguns media types bastante usados no nosso dia a dia:</ins> <br>
+        <strong>
+            &rarr; application/zip <br>
+            &rarr; text/html<br>
+            &rarr; text/css<br>
+            &rarr; text/javascript<br>
+            &rarr; video/mp4<br>
+            &rarr; video/H264<br>
+            &rarr; video/JPEG<br>
+            &rarr; audio/aac<br>
+            &rarr; audio/mepg<br>
+            &rarr; font/ttf<br>
+            &rarr; image/jpeg<br>
+            &rarr; image/png<br>
+        </strong>
+
+
+        </p>
+
+
+    </ol>
+    <hr>
+<!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Aula12-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
+
+    <h2>Aula 12 - Tamanhos de telas diferentes</h2>
+    <ol>
+        <li><b><ins>Na primeira parte dessa aula, aprendemos a mexer com imagens no gimp, fazer imagens pequenas, médias e grandes. Elas foram salvas numa pasta.</ins></b></li>
+        <ul type="disc">
+            <li><a href="ex011/imagens/foto-p.png" download="foto-p.png" type="application/png" target="_blank">exemplo1</a></li>
+            <li><a href="ex011/imagens/foto-m.png" download="foto-m.png" type="application/png" target="_blank">exemplo2</a></li>
+            <li><a href="ex011/imagens/foto-g.png" download="foto-g.png" type="application/png" target="_blank">exemplo3</a></li>
+        </ul>
+        <p>No meio da imagem colocamos uma letra referente ao tamanho da imagem e também pintamos o fundo para diferenciar os diferentes tipos de tamanho das imagens. <br> Depois exportamos as imagens para uma pasta criada.</p>
+
+        <li><b><ins>Imagens dinâmicas</ins></b></li>
+        <ul type="disc">
+            <li>Tags utilizadas: <br> &rarr; <code>&lt;picture&gt;</code> <br> &rarr; <code>&lt;source:media:type&gt;</code> --- <em>Ao digitar isso, o código será criado automaticamente e terá a seguite aparencia:</em>
+            <br>
+            <pre>
+                <code>
+&lt;source media="(min-width: )" srcset="" type="image/"&gt;
+                </code>
+            </pre></li>
+            <li><ins>min-width=""</ins> &rarr; colocamos o número de pixels (é mais fácil trocar para max-width)</li>
+            <li><ins>srcset=""</ins> &rarr; colocamos o caminho até o png, pdf. Exemplo: <strong>imagens/foto-p.png</strong></li>
+            <li><ins>type=""</ins> &rarr; colocamos ao lado da barra o tipo de arquivo. Exemplo: <strong>/pdf /png</strong></li>
+            <li><a href="ex011/index.html">Exemplo de site com a imagem dinâmica. (Junto com seu código)</a></li>
+        </ul>
+        <br>
+        <li><strong><ins>Inserindo áudios no seu site.</ins></strong>
+        <ul type="disc">
+            <li><strong>Cuidados a tomar:</strong> Direitos autorais e tamanho do arquivo</li>
+            <li><strong>Tags:</strong> <br> <code><strong>&lt;audio src=""&gt; &lt;/audio&gt; </strong></code> 
+                &rarr; Em "src" colocamos a source do arquivo (o destino). <br>
+                &rArr; <b>Existem outras tags adicionais para colocarmos dentro da tag <code>&lt;audio&gt;</code>:</b> <br>
+                <ul type="square">
+                    <li><strong>autoplay</strong> &rarr; Começa o áudio automaticamente quando entramos no site</li>
+                    <li><strong>controls</strong> &rarr; Aparece os controles para dar play e pausar</li>
+                    <li><strong>loop</strong> &rarr; O áudio repete-se</li>
+                </ul>
+                <code><strong>&lt;audio preload=""&gt; &lt;/audio&gt;</strong></code>
+                &rarr; preload="<abbr title="metadata = carrega algumas informações do arquivo/áudio após abrir o site. | none = carrega nada, só quando o usuário apertar no play. | auto = o site so termina de carregar depois de ter terminado de carregar o áudio."><ins>metadata</ins>, <ins>auto</ins>, <ins>none</ins></abbr>" <strong> &larr; PASSAR O MOUSE EM CIMA</strong>
+            </li>
+            
+            <li>
+                <strong>Problemas de compatibilidade</strong>
+                <br>
+                Alguns navegadores não reconhecem alguns arquivos de áudio, forçando aos desenvolvedores de sites criarem vários tipos de arquivos de audio disponíveis num site.
+                <br>
+                &rArr; <ins>Exemplo:</ins>
+                <ul type="square">
+                    <li><strong>audio<ins>.MP3</ins></strong></li>
+                    <li><strong>audio<ins>.WAV</ins></strong></li>
+                    <li><strong>audio<ins>.OGG</ins></strong></li>
+                </ul>
+                Devemos escolher alguns desses formatos de áudio de forma a haver mais compatibilidade num site e, além disso, há uma tag para adicionarmos vários tipos de áudio num site, caso um não funcione outro irá funcionar, e caso nenhum funcione, um link no fim será disponibilizado para fazer o download do audio.
+                <br>
+                <b>Exemplo de código:</b>
+                <pre>
+                    <code>
+&lt;audio preload="metadata" controls autoplay loop&gt;
+    &lt;source src="midia/musiquinhabraba.mp3" type="audio/mpeg"&gt; 
+    &lt;source src="midia/musiquinhabraba.ogg" type="audio/ogg"&gt;
+    &lt;source src="midia/musiquinhabraba.wav" type="audio/wav"&gt;
+    &lt;p&gt;Infelizmente, seu navegador não consegue reproduzir áudio. &lt;a href=<ins>"midia/musiquinhabraba.mp3"</ins>&lt;CLIQUE AQUI PARA BAIXAR O ARQUIVO MP3&lt;/a&gt;&lt;p&gt;
+&lt;/audio&gt;
+                    </code>
+                </pre>
+                <audio preload="metadata" controls>
+                    <source src="ex011/midia/musiquinhabraba.mp3" type="audio/mpeg">
+                    <source src="ex011/midia/musiquinhabraba.ogg" type="audio/ogg">
+                    <source src="ex011/midia/musiquinhabraba.wav" type="audio/wav">
+                    <p>Infelizmente, seu navegador não consegue reproduzir áudio. <a href="ex011/midia/musiquinhabraba.mp3">CLIQUE AQUI PARA BAIXAR O ARQUIVO MP3</a></p>
+                </audio>
+            </li>
+           <li>Devemos evitar arquivos .WAV, são muito pesados!</li>
+        </ul>
+        </li>
+        <br>
+    </ol>
+<!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Aula13-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
+    <hr>
+    <h2 id="aula13">Aula 13 - Vídeos e hospedagem de vídeos</h2>
+    <ol>
+        <!-- Lista da aula 013-->
+        <li>
+            
+            <p><img src="ex012/midia/tabelae.png" alt="foto" height="300px" width="600px" align="right"><strong><ins>Compatibilidade dos vídeos</ins></strong> <br> Os vídeos possuem algumas diferentes compatibilidades em diferentes navegadores. Segue na direita uma tabela de todos navegadores com diferentes compatibilidades de tipos de vídeos .arq &rarr; <br></p>
+        </li>
+        <li>
+            <strong><ins>Tags utilizadas:</ins></strong>
+            <!-- Lista de tags-->
+            <ul type="disc">
+                <li><code>&lt;video src="" width="" <strong>controls </strong>&gt;</code></li>
+                <li>
+<pre>
+    <code>
+&lt;video width="500" poster="" <strong>controls</strong>&gt;
+&lt;source src="" type=""&gt;
+&lt;/video&gt;
+    </code>
+</pre>
+                </li>
+            </ul>
+            <!-- Fim da lista de tags-->
+        </li>
+        <li>
+            <strong><ins>Como funciona:</ins></strong> <br>
+            &rarr; Devemos ter vários tipos de arquivo de mídia, para caso algum navegador não seja compatível com algum, consigamos abrir eles na mesma. (ajuda no mecanismo de busca do google) <br>
+            &rarr; Devemos adicionar dentro das tags <code>&lt;video&gt; &lt;/video&gt;</code> os tipos de arquivos (sources) na ordem de cima para baixo e do mais leve para o mais pesado. No fim devemos adicionar um parágrafo dizendo que <q>O seu navegador não é compatível com vídeos.</q> <br>
+            <strong><a href="ex012/index.html">Exemplo de site com vídeo. (ver o código fonte da página, caso necessário.)</a></strong>
+        </li>
+<!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Aula14-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
+    </ol>
+    <hr>
+    <h2>Aula 14 - Início CSS</h2>
+    <ol>
+        <li style="text-decoration: underline;" >Tags utilizadas</li>
+        <ul type="disc">
+            <li><code><em>background-color;</em></code>&rarr; Cor do fundo (página ou algo escrito.)</li> 
+            <li><code><em>font-family</em></code>&rarr; Escolher o tipo de fonte.</li>
+            <li><code><em>font-size</em></code>&rarr; Escolher o tamanho da fonte (Em pixels)</li>
+            <li><code><em>color</em></code>&rarr; Cor da fonte ou da tag selecionada</li>
+            <li><code><em>text-align</em></code>&rarr; Muda o alinhamento do texto (Justify para ser o alinhamento total na página)</li>
+        </ul>
+        <li style="text-decoration: underline;">Tipos de CSS</li>
+        <ul type="disc">
+            <li><em style="color: orangered;">CSS inline, inserida na tag</em> &rarr; Não é muito recomendada! <br>
+            <sup><strong><ins>Exemplo:</ins></strong></sup> <br>
+            <code>&lt;h1 style="color: red"&gt;</code>
+            </li>
+            <li>
+                <em style="color: orangered">CSS no próprio arquivo .html</em><br>
+                <sup><strong><ins>Exemplo:</ins></strong></sup> <br>
+                <pre>
+                    <code>
+body {
+    color: red;
+    background-color: black;
+    font-size: 20px
+}
+                    </code>
+                </pre>
+            </li>
+            <li>
+                <em style="color: orangered;">CSS em outro arquivo HTML</em> <br>
+                &rarr; Neste caso, devemos criar uma file .CSS e no arquivo index.html ou qualquer outro digitar <code>link:css</code> <br>
+                Isso ficará assim: <br>
+                <code>&lt;link rel="stylesheet" href="style.css"&gt;</code> <br>
+                No href devemos colocar a file em que o código CSS está. <br>
+                <p>Além disso, devemos no começo do código CSS escrever <code>@charset "UTF-8";</code></p>
+            </li>
+        </ul>
+
+    </ol>    
+    <hr>
+    <a href="#top">Voltar ao topo</a>
+</body>
+</html>
+
+

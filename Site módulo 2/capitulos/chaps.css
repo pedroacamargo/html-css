@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: linear-gradient(45deg, #3AF2F4, #2FBFC2);
+    background-attachment: fixed;
+}
+
+main{
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 10px;
+    margin: auto;
+    width: 1000px;
+    box-shadow: 2px 2px 10px black;
+}
+
+h1{
+    color: #1C7475;
+    text-shadow: 2px 2px 3px #1C7475;
+    text-align: center;
+}
+
+h2{
+    color: black;
+    text-shadow: 1px 1px 2px white;
+    text-align: center;
+}
+
+strong{
+    text-decoration: underline;
+}
+
+code{
+    color: #1C7475;
+}
+
+p{
+    text-align: justify;
+}
+
+pre{
+    margin: 1px;
+}
+
+.img1, .img2, .img3 {
+    text-align: center;
+}
+
+.top {
+text-align: center;
+}
+
+.voltar {
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(63, 63, 206);
+    border-radius: 20px;
+}
+
+.voltar:hover {
+    background-color: black;
+}
+
+.aulas {
+    background-color: #3AF2F4;
+    border-radius: 10px;
+    width: 300px;
+    color: black;
+    position: fixed 10px;
+}
+
+.exemplo {
+    display: inline-block;
+    background-color: aquamarine;
+    text-align: center;
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+}
+
+.exemplo:hover {
+    background-color: black;
+}
+
+.mouse > p {
+    display: none;
+}
+
+.mouse:hover > p {
+    display: block;
+    color: white;
+    background-color: red;
+    width: 200px;
+}
+
+.mouse:hover {
+    color: red;
+}

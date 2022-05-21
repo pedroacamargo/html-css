@@ -1,0 +1,18 @@
+height - altura
+width - largura
+border - borda da caixa
+padding - preenchimento da borda (borda fica mais distante)
+margin - espaço externo
+outline - contorno ou traçado
+display block - 
+
+
+Tipos de caixa
+
+1 - block-level || 2 - inline-level
+
+1- Ocupa a largura inteira do viewport, pula para a linha de baixo e pula para a próxima linha para continuar o conteúdo. <div> <h1>-<h6> <p> <main> <header> <nav> <article> <aside> <footer> <form> <video>
+
+2 - Não quebra linha, continua o conteúdo e não ocupa o viewport inteiro. <span> </span> <a> <code> <small> <strong> <m> <sup>-<sub> <label> <button> <input> <select>
+
+Window Resizer - extensao chrome
