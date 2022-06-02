@@ -3,4 +3,4 @@
 
 Estou aprendendo a criar sites e a gerenciar meus repositórios.
 
-<a href="https://pedroacamargo.github.io/html-css/sitecurso/index.html">Site com rolar para baixo (aprendendo) </a>
+<a href="https://pedroacamargo.github.io/html-css/sitecurso/index.html" target="_blank" rel="external">Site com rolar para baixo (aprendendo) </a>
