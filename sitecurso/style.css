@@ -27,39 +27,29 @@
 }
 
 body {
-    background-color: var(--cor03);
+    background-image: url(../exercicios/ex022/imagens/wallpaper004.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 header {
-    background-color: rgba(17, 17, 17, 0.87);
-    padding: 15px 5% 15px 5%;
-    min-width: 350px;
+    height: 10vh;
+    background-color: rgba(199, 195, 195, 0.781);
 }
 
-header h1 {
-    text-align: left;
-    color: white;
-    font-family: var(--fonte01);
-    background-image: linear-gradient(to right, black, transparent);
-    border-radius: 20px 0px 0px 0px;
-    padding: 10px 0px 10px 20px;
-    text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.301);
-}
-
-header p {
-    text-align: left;
-    background-image: linear-gradient(to right, white, transparent);
-    color: black;
-    padding: 2px 0px 2px 20px;
-    border-radius: 0px 0px 0px 20px;
-    font-family: var(--fonte01);
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.301);
+header img {
+    height: 10vh;
+    max-width: 300px;
+    position: absolute;
+    left: 81%;
+    padding: 10px 0px 0px 0px;
 }
 
 nav {
     font-family: Arial, Helvetica, sans-serif;
-    height: 25px;
-    background-color: black;
+    height: 30px;
+    background-color: rgba(199, 195, 195, 0.781);
+
 }
 
 nav ul {
@@ -69,10 +59,14 @@ nav ul {
 }
 
 nav ul li {
-    width: 100px;
+    width: 70px;
     float: left;
     border-right: 1px solid gray;
     border-top: 1px solid gray;
+}
+
+nav ul li:first-child {
+    border-left: 1px solid gray;
 }
 
 nav a {
@@ -81,7 +75,12 @@ nav a {
     display: block;
     text-align: center;
     text-decoration: none;
-    background-color: black;
+    background-color: rgba(199, 195, 195, 0.781);
+}
+
+nav ul li a img {
+    height: 20px;
+    width: 20px;
 }
 
 nav ul ul {
@@ -94,8 +93,9 @@ nav ul li:hover ul{
 }
 
 nav ul a:hover {
-    background-color: white;
-    color: black;
+    background-color: rgba(131, 128, 128, 0.568);
+    color: white;
+    transition: 0.3s;
 }
 
 nav ul ul li {
@@ -114,38 +114,3 @@ nav ul ul li a:hover {
     background-color: rgb(44, 27, 27);
 }
 
-main {
-    background-color: whitesmoke;
-    margin: auto;
-    padding: 20px 10px 10px 15px;
-    line-height: 1.2em;
-    font-family: var(--fonte02);
-    font-weight: 600;
-    text-align: justify;
-    text-indent: 30px;
-}
-main h1 {
-    padding: 0px 0px 20px 0px;
-    text-align: center;
-}
-
-main ul {
-    list-style: none;
-    display: inline;
-}
-
-main ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-main li {
-    background-color: var(--cor05);
-    height: 100px;
-    width: 100px;
-}
-
-main ul li:hover {
-    background-color: var(--cor07);
-    padding: 50px 0px 0px 0px;
-}
